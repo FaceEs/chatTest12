@@ -1,0 +1,269 @@
+* {
+    font-family: 'Cagliostro', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    background-color: snow;
+}
+
+#main {
+    box-sizing: border-box;
+    overflow: auto;
+    width: 70%;
+    height: 83vh;
+    position: fixed;
+    background-color: rgba(255, 218, 185,0.2);
+    font-family: Arial;
+}
+.members {
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgba(72, 61, 139, 0.6);
+    float: right;
+    width: 30%;
+    font-family: Arial;
+}
+.members h6 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(220, 220, 220);
+    margin: 1px;
+}
+.members #users{
+    font-size: 19px;
+    color: rgb(220, 220, 220);
+    margin-left: 10px;
+
+}
+.members .botHelp {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 10vh;
+    width: 99%;
+    background-color: rgb(220, 220, 220);
+    font-size: 19px;
+    color: rgb(72, 61, 139);
+    text-align: center;
+    overflow-y: hidden;
+}
+.botHelp span {
+    font-weight: bold;
+}
+
+/*.botHelp:hover {
+    height: 40vh;
+    transition: 0.7s ease-in-out;
+}*/
+.vert-bot-menu {
+    display: none;
+}
+.vert-bot-menu a{
+    display: block;
+    margin-top: 10px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: rgb(72, 61, 139);
+    
+}
+.vert-bot-menu a:hover {
+    background-color: grey;
+    color: white;
+
+}
+/*.bothelp:hover > .vert-bot-menu {
+    display: block;
+}*/
+/*.members .search {
+    margin-bottom: 10px;
+}
+.members .search input[type=text] {
+    height: 35px;
+    width: 130px;
+    background-color: transparent;
+    color: rgb(220, 220, 220);
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    transition: width 0.3s ease-in-out;
+}
+.members .search input[type=text]:focus {
+    width: 85%;
+    outline: none;
+}
+.members .search i {
+    color: rgb(220, 220, 220);
+    font-size: 10px 10px;
+    margin-left: 4%;
+}*/
+.panel {
+    position: fixed;
+    bottom: 0;
+    height: 17vh;
+    width: 70%;
+    margin-top: 0;
+    box-sizing: border-box;
+    border-top: 3px solid rgb(220, 220, 220);
+    background: rgba(220, 220, 220,0.5);
+}
+        
+.inputs {
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 70%;
+    font-size: 19px;
+    margin-top: 0;
+}
+.inputs span {
+    padding-top: 8px;
+}
+.inputs button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 25px;
+    margin-top: 4%;
+    //margin-right: 3%;
+    margin-left: 3%;
+}
+.inputs .clip {
+    color: darkgray;
+}
+.inputs i {
+    font-size: 27px;
+    color: rgb(72, 61, 139);
+}
+#nick {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    //overflow: auto;
+    border: 3px solid rgb(220, 220, 220);
+    margin-left: 5%;
+    margin-top: 2.5%;
+    
+}
+.input-right {
+    height: 15vh;
+    width: 70%;
+    margin-left: 2%;
+    margin-top: 0.5%;
+}
+.input-right #mymessage {
+    box-sizing: border-box;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    padding: 8px 45px 8px 8px;
+    resize: none;
+    height: 100%;
+    width: 100%;
+    font-size: 19px;
+}
+.input-right textarea:focus {
+    outline: none;
+}
+
+.myTime {
+    margin-left: 54%;
+    margin-top: 10px;
+    font-size: 13px;
+    color: darkgrey;
+    margin-bottom: -1px;
+}
+.mine {
+    width: 42%;
+    border: 1px solid rgba(72, 61, 139, 0.4);;
+    border-radius: 15px;
+    background-color: rgba(72, 61, 139, 0.4);
+    font-size: 21px;
+    margin-left: 53%;
+    margin-bottom: 2px;
+    padding: 2px 2px;
+}
+
+.otherTime {
+    margin-left: 3%;
+    margin-top: 10px;
+    font-size: 13px;
+    color: darkgrey;
+    margin-bottom: -1px;
+}
+.others {
+    width: 42%;
+    border: 1px solid rgb(220,220,220);
+    border-radius: 15px;
+    background-color: rgb(220, 220, 220);
+    font-size: 21px;
+    margin-left: 8%;
+    margin-bottom: 2px;
+    padding: 2px 2px;
+}
+.avatar {
+    float: left;
+    font-size: 16px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    //box-sizing: border-box;
+    text-align: center;
+    border: 3px solid gray;
+    //padding: 3px;
+    //margin-top: 15px;
+    margin-left: 2%;
+    margin-right: 2px;
+    //margin-bottom: 2px;
+    color: black;
+
+}
+.incoming {
+    font-size: 16px;
+    color: darkred;
+    text-align: center;
+    margin-top: 10px;
+}
+#dopDiv {
+    position: fixed;
+    bottom: 0;
+    height: 0;
+    width: 70%;
+    background: rgba(220, 220, 220,0.5);
+}
+#preview {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-left: 15%;
+}
+.previewImage {
+    height: 40px;
+    //width: 50px;
+    margin-top: 10px;
+}
+.atImage {
+    height: 150px;
+    margin-top: 10px;
+}
+.fileclose {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+
+}

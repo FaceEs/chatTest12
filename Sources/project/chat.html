@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
+    <title>Chat</title> 
+</head>
+<body>
+<div class="members">
+    <h6>Пользователи: </h6>
+    <!--<form class="search">
+         <i class="fa fa-search"></i><input type="text" name="search">
+    </form>-->
+    <div id="users">тут будет список пользователей...</div>
+    <div class="botHelp" onmouseover="botHelpO();" onmouseout="botHelpD();"><span>Помощь бота</span>
+        <div class="vert-bot-menu">
+          <a href="#" onclick="botHelp(0);">Расписание пар</a>
+          <a href="#" onclick="botHelp(1);">Расписание звонков</a>
+          <a href="#" onclick="botHelp(2);">Список преподавателей</a>
+          <a href="#" onclick="botHelp(3);">Оценки</a>
+          <a href="#" onclick="botHelp(4);">Изменения в расписании</a>
+        </div>
+    </div>
+</div>
+<div id="main"></div>
+    <div class="panel">
+        <form onsubmit="return false;">
+            <div class="inputs">
+                <!--<span>Вы:</span>-->
+                <div id="nick" ></div>
+                <div class="input-right">
+                    <textarea id="mymessage" name="message" placeholder="Введите сообщение..." autofocus="autofocus"></textarea>
+                    <label style="height: 20px; width: 45px; position: absolute; top: 2%; left: 80%;">
+                    <i class="clip fa fa-paperclip" >
+                        <input type="file" name="myfile" id='myFile' style="position: absolute; top: 8%; font-size: 2px; display: none;">
+                    </i>
+                    </label>
+                </div>
+                    
+                    <button onclick="sendMessage(nickname, document.forms[0].message.value, document.forms[0].myfile.files[0]);">
+                        <i class="fa fa-paper-plane"></i></button>
+            </div>
+        </form>
+        <div id="dopDiv"></div>
+    </div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+ body {
+ 	background-image: url('pict/bg.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ }
+ #greeting {
+ 	position: absolute;
+ 	top: 50px;
+ 	left: 90px;
+ 	color: white;
+ 	font-size: 30px;
+ }
+ .login_form {
+ 	position: absolute;
+ 	top: 45%;
+ 	left: 30%;
+ 	height: 300px;
+ 	width: 500px;
+ 	background-color: rgba(72, 61, 139,0.6);
+ 	border-radius: 20px;
+ }
+ #loginForm .cncl {
+ 	float: left;
+ 	height: 35px;
+ 	width: 150px;
+ 	padding-left: 0;
+ 	margin-top: 40px;
+ 	margin-left: 45px;
+ 	text-decoration: underline;
+ 	background-color: transparent;
+ 	border: none;
+ 	font-size: 20px;
+ 	color: white;
+ }
+ #loginForm input[type=text] {
+ 	height: 50px;
+ 	width: 350px;
+ 	border: none;
+ 	border-radius: 15px;
+ 	margin-top: 115px;
+ 	margin-left: 75px;
+ 	box-sizing: border-box;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ 	font-size: 18px;
+ 	color: rgb(72, 61, 139);
+ }
+#loginForm input:focus{
+	outline: none;
+}
+#loginForm .enter {
+	height: 35px;
+	width: 150px;
+	float: right;
+	margin-top: 40px;
+	margin-right: 75px;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	color: rgb(72, 61, 139);
+	background-color: rgb(255, 218, 185);
+}
